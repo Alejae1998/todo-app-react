@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import './Auth.css';
 import { useState } from 'react';
-import { authUser } from '../../services/auth';
-import { useUser } from '../../context/UserContext';
+import { authUser } from '../../services/auth.js';
+import { useUser } from '../../context/userContext.js';
+// import { useState } from 'react';
+// import { authUser } from '../../services/auth';
+// import { useUser } from '../../context/UserContext.js';
 
 export default function Auth() {
   const [email, setEmail] = useState('');
